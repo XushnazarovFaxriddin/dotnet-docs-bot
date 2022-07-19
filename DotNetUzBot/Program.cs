@@ -11,7 +11,7 @@ static class Program
     [Obsolete]
     static async Task Main()
     {
-        botClient = new TelegramBotClient("5443174003:AAHyH343QbPtQ_zo1WpAy1qqHCkV0--Jbzw");
+        botClient = new TelegramBotClient("BOT-TOKENI");
         BotService botService = new BotService(botClient);
         botClient.OnMessage += botService.OnMessageAsync!;
         botClient.OnCallbackQuery += botService.InlineCallBack!;
